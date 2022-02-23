@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToDoAction } from '../../redux/actions';
 import {v4 as uuidv4} from 'uuid' 
-import { toDoListSelctor, filterSearchSelector } from '../../redux/seclertor';
+import { toDoListSelctor } from '../../redux/seclertor';
 
 export default function TodoList() {
   const dispatch = useDispatch();
@@ -24,7 +24,6 @@ export default function TodoList() {
     setName('')
     setPrioriry('High')
   }
-  console.log(toDoList)
   return (
     <Row style={{ height: 'calc(100% - 40px)' }}>
       <Col span={24} style={{ height: 'calc(100% - 40px)', overflowY: 'auto' }}>

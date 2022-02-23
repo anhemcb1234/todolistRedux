@@ -11,6 +11,11 @@ export const searchFilter = (data) => {
 
 export const statusFilter = (data) => {
     return {
-    type:'status',
+    type:'filters/status',
+    payload: data
+}}
+export const prioriryFilter = (data) => {
+    return {
+    type:'filters/prioriryFilter',
     payload: data
 }}
